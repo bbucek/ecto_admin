@@ -32,7 +32,7 @@ defmodule EctoAdmin.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:ecto, "~> 0.5"},
       {:cowboy, "~> 1.0.0"},
-      {:plug, "~> 0.9.0"}
+      {:plug, "~> 1.0"}
     ]
   end
 end
