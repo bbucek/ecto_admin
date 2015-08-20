@@ -20,7 +20,7 @@ defmodule EctoAdmin.Resource do
   end
 
   defp render("GET", [], resource, repo) do
-    fields = Map.keys(resource.__struct__) -- [:__state__, :__struct__]
+    fields = resource.__schema__(:fields)
     index([fields: fields, instances: repo.all(resource)])
   end
   defp render(_method, _path, _resource, _repo) do
